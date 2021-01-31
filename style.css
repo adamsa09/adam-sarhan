@@ -122,6 +122,11 @@ a:visited {
     padding-top: 35px;
 }
 
+.linkbtn {
+    background-color: transparent;
+    border  : none;
+}
+
 #about {
     padding-top: 100px;
     text-align: center;

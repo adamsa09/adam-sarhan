@@ -21,11 +21,7 @@ function topFunction() {
 }
 
 
-
-var about = document.getElementsByClassName('about');
-var projects = document.getElementsByClassName('projects');
-var contact = document.getElementsByClassName('contact');
-
-about.onclick = () => {
-    console.log('asd');
+function hide(id) {
+    var item = document.getElementById(id);
+    item.style.visibility = "hidden";
 }
