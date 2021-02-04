@@ -10,23 +10,21 @@
 
 <body>
     <div class="main">
-        <div class="top">
-            <div class="title">
-                <h1 class="titletxt">Adam Sarhan</h1>
-            </div>
-            <div class="navbar">
-                <nav class="navigation">
-                    <ul class="pages">
-                        <li class="about"><a href="#about">About Me</a></li>
-                        <!-- id="projects-title"     onclick="hide('projects-title')" 🔽-->
-                        <li class=" projects"><a href="#projects">My Projects</a></li>
-                        <li class="contact"><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div id="navbar">
+            <ul class="pages">
+                <li>
+                    <h1 class="titletxt">Adam Sarhan</h1>
+                    </h1>
+                </li>
+                <li class="about"><a href="#about" class="pagelink">About Me</a></li>
+                <!-- id="projects-title"     onclick="hide('projects-title')" 🔽-->
+                <li class=" projects"><a href="#projects" class="pagelink">My Projects</a></li>
+                <li class="contact"><a href="#contact" class="pagelink">Contact Me</a></li>
+            </ul>
         </div>
+        </nav>
         <div id="about">
-            <h1><a href="#about">About Me</a></h1>
+            <h1><a href="#about" class="link">About Me</a></h1>
             <p class="text">
                 I am an 11 year old programmer from Canada. I know Python, JavaScript, C#,
                 C++, C, and a little bit of Java (Can't say HTML 😅). I love learning about math and computers, as
@@ -36,17 +34,18 @@
         </div>
         <hr class="separator" />
         <div id="projects">
-            <h1><a href="#projects">My Projects</a></h1>
+            <h1><a href="#projects" class="link">My Projects</a></h1>
             <p class="text">
                 Throughout my programming "career" I have made alot of applications. I probably have so many folders of
-                unfinished projects. Check out my <a href="https://github.com/adamsa09">Github</a>, I have 2 projects
+                unfinished projects. Check out my <a href="https://github.com/adamsa09" class="link">Github</a>, I have
+                2 projects
                 there. 1 was made in my earlier days of coding. I have other projects that I have never published on
                 Github
                 but I
                 probably will. </p>
             <div class="projects-all">
                 <div class="searcher">
-                    <h2><a href="https://github.com/adamsa09/theSearcher">The Searcher</a></h2>
+                    <h2><a href="https://github.com/adamsa09/theSearcher" class="link">The Searcher</a></h2>
                     <p class="text">I made this application with python when I first started coding. I then learnt about
                         git, and automatically published it there. Git is extremely useful not only for group projects
                         but
@@ -54,7 +53,7 @@
                         the input. It's very simple but helped me get an understanding of web scraping. I could have
                         changed
                         the way it searched by making it go to
-                        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs">google.com</a> and make it
+                        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="link">google.com</a> and make it
                         find
                         the search box with <code>driver.findElementById('q')</code> which basically finds the searchbox
                         by
@@ -62,23 +61,26 @@
                         way.
                         Basically, I found how the Google search urls work.
                         it goes: https://google.com/search+term. The search term is
-                        <a href="https://www.w3schools.com/tags/ref_urlencode.ASP">encoded into a url</a>. That was
+                        <a href="https://www.w3schools.com/tags/ref_urlencode.ASP" class="link">encoded into a url</a>.
+                        That was
                         another
                         learning point. Discovering things for yourself.
                     </p>
                 </div>
             </div>
             <div>
-                <h2><a href="https://github.com/adamsa09/flutter-productivity-app">Flutter Productivity App</a></h2>
+                <h2><a href="https://github.com/adamsa09/flutter-productivity-app" class="link">Flutter Productivity
+                        App</a></h2>
                 <p class="text">
-                    <i><b>If you have a name for the app please <a href="#contact">contact me</a> 😅</b></i><br />
-                    This is a productivity application built with <a href="https://flutter.dev">Flutter</a>. It includes
+                    <i><b>If you have a name for the app please <a href="#contact" class="link">contact me</a>
+                            😅</b></i><br />
+                    This is a productivity application built with <a href="https://flutter.dev"
+                        class="link">Flutter</a>. It includes
                     a task manager, notes, and homepage. There are more features coming soon 🤫...
                 </p>
             </div>
         </div>
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script src="index.js"></script>
 </body>
 
